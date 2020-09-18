@@ -1,0 +1,177 @@
+@charset "utf-8";
+body {
+	font-family:'Maven Pro','Noto Sans KR',sans-serif;
+	font-size:16px;
+	color:#000;
+	background-color:#fff;
+} 
+a,a:link {
+	text-decoration:none;
+	color:inherit;
+}
+.notext {
+	display:none;
+}
+.header_wrapper {
+	border-bottom:4px solid #f9c02d;
+}
+#header {
+	width:920px;
+	height:200px;
+	margin:0 auto;
+	position:relative;
+}
+.top_menu {
+	float:left;
+}
+.top_menu li {
+	float:left;
+	margin-left:10px;
+	line-height:200px;
+}
+.top_menu li a {
+	font-size:14px;
+	font-weight:500;
+}
+.top_menu li a:hover {
+	color:#f9c02d;
+	transition:1s;
+}
+.main_logo {
+	position:absolute;
+	width:299px;
+	height:142px;
+	left:50%;
+	bottom:-1px;
+	transform:translateX(-50%); 
+}
+.sns_menu {
+	float:right;
+}
+.sns_menu li {
+	float:left;
+	margin-left:10px;
+	line-height:200px;
+}
+.nav {
+	background:#eee;
+	height:50px;
+	text-align:center;
+}
+#gnb {
+	width:400px;
+	margin:0 auto;
+}
+#gnb li {
+	display:inline-block;
+	margin:0 5px;
+	line-height:50px;
+}
+#gnb li a {
+	font-size:18px;
+	color:#f9c02d;
+	font-weight:700;
+	transition:color 0.3s;
+}
+#gnb li a:hover {
+	color:#000;
+}
+#youtube-movie {
+	width:920px;
+	height:460px;
+	margin:0 auto;
+	position:relative;
+}
+#youtube-movie iframe {
+	width:100%;
+	height:100%;
+	border:0;
+}
+#movie-character {
+	position:absolute;
+	top:40%;
+	left:50%;
+	transform:translateX(-50%);
+}
+.title {
+	text-align:center;
+	margin-top:160px;
+	font-size:30px;
+	color:#f9c02d;
+	font-weight:bolder;
+	text-transform:capitalize;
+}
+.character {
+	width:920px;
+	height:306px;
+	margin:30px auto;
+    font-size:0;
+}
+.character li {
+	/* display:inline-block; /* 여백 자동추가 */
+	/* border:1px solid #f9c02d; */
+	/* width:306px; */                     
+	/* height:306px; */
+	/* box-sizing:border-box; */
+	/* overflow:hidden;  ============================= 방법 1 ==========*/
+	float:left;
+	border:1px solid #f9c02d;
+	overflow:hidden;
+	width:306px;
+	height:306px;
+	box-sizing:border-box;  
+}
+/* .character li:nth-child(3)  여러개 li중에 하나를 따로 지정할때 씀 */
+
+/* .character li:hover { */
+	/* border-color:#f9c02d;    선 색깔 호밍*/
+	/* transition:border-color 0.3s;*/
+
+.character li:hover img {
+	transition:transform 0.3s;
+	transform:scale(1.4,1.4);
+}
+.banner_wrapper {
+	background:#f9c02d;
+}
+.banner {
+	width:920px;
+	margin:0 auto;
+}
+#footer {
+	/* 블럭요소는 가로폭 100%가 기본값이다 */
+	max-width:920px; /*최대*/
+	margin:0 auto;
+	padding:15px 0;
+	position:relative;
+}
+.extra_menu li {
+	display:inline-block;
+	font-size:15px;
+	color:#888888;
+}
+.extra_menu li:nth-child(2) {
+	margin:0 10px;
+}
+/* .extra_menu li:nth-child(2):after or before { */
+	/* content:''; */
+	/* width:1px; */
+	/* height:10px; */
+	/* background:#333; */
+	/* display:inline-block;   글자 사이에 선을 넣는것 (드래그x 문자가 아님) */
+/* } */
+.extra_menu li a:hover {
+	color:#000000;
+	transition:1s;
+}
+.sub_logo {
+	float:right;
+	transform:translateY(-50%);
+}
+.copy {
+	font-size:11px;
+	color:#888888;
+}
+
+
+
