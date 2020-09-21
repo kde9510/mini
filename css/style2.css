@@ -144,6 +144,7 @@ a,a:link {
 	padding-left:15px;
 	height:30px;
 	line-height:30px;
+	margin:30px 0;
 }
 .sub-title + p {  /* + : 다음에 오는 형제 요소 선택자 */
 	margin:30px 0;
@@ -156,8 +157,69 @@ figcaption {
 	display: none; /*공간마저 남기지 않고 없앰, 표시를 아예 안함 */
 	visibility: hidden; /*공간은 표시하지만 내용은 표시하지 않음 */
 }
+/* =============================제작사 시작=======ciList===================*/
 #ciList {
-	
+	display:flex;
+	justify-content:space-between;
 }
-
-
+#ciList li {
+	position:relative;
+}
+#ciList .outlink {
+	display: none;
+	font-size:2rem; /* 부모 요소 글자크기 기분으로 2배 */
+	color:#f3f3f3;
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:50px;
+	height:50px;
+	text-align: center; /* 상자안에 아이콘 중앙으로 */
+	transform:translate(-50%,-50%); /* 상자를 중앙으로 */
+	line-height:50px; /* 상자안에 아이콘 중앙으로 */
+	border-radius:50%; /* 상자 모서리 깎는거*/
+	background-color:rgba(0,0,0,.5);
+}
+#ciList .hide {
+	display:none;
+}
+#ciList > li:hover .outlink {
+	display:block;
+}
+/* =============================등장인물 시작======about_cha===================*/
+#about_cha {
+	display: flex;
+	flex:1 1 auto;
+	justify-content:space-between;
+}
+#about_cha img {
+	max-width: 100%;
+}
+#about_cha li {
+	position:relative;
+}
+#about_cha .outlink {
+	display: none;
+	font-size:2rem;
+	color:#f3f3f3;
+	position:absolute;
+	left:50%;
+	top:40%;
+	width:50px;
+	height:50px;
+	text-align: center; 
+	transform:translate(-50%,-50%);
+	line-height:50px;
+	border-radius:50%; 
+	background-color:rgba(0,0,0,.5);
+}
+#about_cha .hide {
+	display:none;
+}
+#about_cha > li:hover .outlink {
+	display:block;
+}
+#about_cha p {
+	margin:30px 0;
+	text-align: center;
+}
